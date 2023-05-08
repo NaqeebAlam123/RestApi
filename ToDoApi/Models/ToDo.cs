@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-
+using System.Diagnostics.CodeAnalysis;
+using System.Text.Json.Serialization;
+#nullable enable
 namespace ToDoApi.Models
 {
     [Table("tblToDo")]
@@ -17,6 +19,6 @@ namespace ToDoApi.Models
 
         public int BoardId { get; set; }
 
-        public Board Board { get; set; } = new Board();
+        public Board? Board { get; set; }
     }
 }

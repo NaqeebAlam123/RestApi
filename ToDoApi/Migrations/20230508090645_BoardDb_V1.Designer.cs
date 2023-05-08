@@ -12,7 +12,7 @@ using ToDoApi.Data;
 namespace ToDoApi.Migrations
 {
     [DbContext(typeof(BoardsContext))]
-    [Migration("20230508063818_BoardDb_V1")]
+    [Migration("20230508090645_BoardDb_V1")]
     partial class BoardDb_V1
     {
         /// <inheritdoc />
